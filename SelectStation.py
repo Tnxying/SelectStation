@@ -11,8 +11,8 @@ def getUrlData(url):
         html = bytes.decode(response.read())
         print(response)
         print(html)
-        //f = open('test.html', 'w', -1, 'utf-8')
-        //f.write(html)
+        f = open('test.html', 'w', -1, 'utf-8')
+        f.write(html)
     except (Exception, request.URLError) as e:
         print(e)
 
