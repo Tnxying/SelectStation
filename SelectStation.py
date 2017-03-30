@@ -12,7 +12,7 @@ def getUrlData(url, data=None, header=None):
         try:
             print(data);
             print(header);
-            full_url = request.Request(url,data,headers)
+            full_url = request.Request(url,data,header)
             response = request.urlopen(full_url)
             html = response.read().decode()
             print(html)
